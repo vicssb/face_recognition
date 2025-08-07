@@ -8,12 +8,10 @@
 
 <div align="top" style="display: flex; justify-content: space-between;">
   <img src="./img/artificial-intelligence.png" alt="Logo Inteligência Artificial" width="80"/>
-  <img src="./img/pineconeLog.png" alt="Logo pinecone" width="80"/>
-  <img src="./img/logoN8N.png" alt="Logo N8N" width="80"/>
+ 
 </div>
 
-Gerar respostas precisas e contextualizadas para perguntas técnicas.
-Automatizar tarefas repetitivas de busca e análise de informações.
+
 
 ## Introdução
 
@@ -38,9 +36,6 @@ Este projeto tem como objetivo a detecção e reconhecimento de faces, utilizand
 - Python 3.7 ou superior.
 - Framework TensorFlow ou PyTorch para desenvolvimento e treinamento de modelos de IA.
 
-## Referência
-
-Para mais detalhes, consulte: https://docs.n8n.io/
 
  ## Baixar
   [Baixar Notebook](face_recognition.ipynb)
