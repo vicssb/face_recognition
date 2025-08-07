@@ -17,46 +17,33 @@ Automatizar tarefas repetitivas de busca e análise de informações.
 
 ## Introdução
 
-Este projeto tem como objetivo Integrar inteligência artificial e automação para o acesso a informações complexas e transformá-las em conhecimento útil. Neste projeto utilizei a técnica RAG (Retrieval Augmented Generation), ou Geração de recuperação aumentada. Foi criado um Agente no N8N que é um verdadeiro especialista técnico personalizado em qualquer área! 
+Este projeto tem como objetivo a detecção e reconhecimento de faces, utilizando o framework TensorFlow em conjuntos com outras bibliotecas.
 
 
 ## Estrutura do Projeto
 
 1. **Criação da Base de Conhecimento**:
-  - Consultar e extrair dados de fontes diversas de forma eficiente.
-   - A cada minuto o agente verifica se um novo arquivo foi incluído em uma determinada pasta do Google Drive.
-   - Embeddings do Google Gemini são representações numéricas de dados de texto, imagem ou vídeo, que capturam o significado e as relações semânticas entre eles. Esses vetores numéricos permitem que modelos de aprendizado de máquina, especialmente de IA generativa, processem e produzam linguagem de forma mais eficaz, identificando padrões complexos e relações semânticas específicas de um determinado conteúdo. 
-   - Pinecone é um banco de dados vetorial gerenciado na nuvem, projetado para otimizar a pesquisa de similaridade de dados em aplicações de inteligência artificial. Ele permite que desenvolvedores integrem facilmente pesquisa vetorial em seus aplicativos, como pesquisa semântica, sistemas de recomendação e análise de dados orientada por IA. 
-  ![Fluxo N8N](./img/RAG-Vicssb.png)
-  [Baixar Fluxo N8N](rag_vicssb.json)
+  - Colocar os arquivos de imagens conhecidas na pasta known com o nome no arquivo
 
-2. **Agente de IA de RAG**:
-  - O agente RAG faz o seguinte: Recuperação: a solicitação do usuário é usada para consultar uma base de dados de conhecimento externa, como um repositório de vetores, pesquisa de palavra-chave ou banco de dados SQL. A meta é obter os dados de suporte necessários para a resposta do LLM
-   - Ajuste dos hiperparâmetros.
-   ![Fluxo N8N](./img/Vic_Agent.png)
-  [Baixar Fluxo N8N](Vic_Agent.json)
-  
+  <img src="./img/Hawking.jpeg" alt="Hawking" width="400"/>
+  <img src="./img/Einstein.jpeg" alt="Einstein" width="400"/>
+
+2. **Imagens desconhecidas**:
+  - Colocar os arquivos de imagens desconhecidas na pasta unknown
+
+  <img src="./img/x.jpeg" alt="desconhecida" width="400"/>
 
 ## Requisitos
 
 - Python 3.7 ou superior.
 - Framework TensorFlow ou PyTorch para desenvolvimento e treinamento de modelos de IA.
-- Ferramenta de anotação de imagens (exemplo: LabelImg) para preparar os dados de entrada.
-- Conta no Google Drive para armazenamento e atualização automática dos arquivos de conhecimento.
-- Pinecone para gerenciamento e busca de vetores de embeddings.
-- Gemini API para geração de embeddings de texto, imagem ou vídeo.
-- N8N para automação dos fluxos e integração dos agentes
-
-## Uso no Chat do N8N
-![Chat N8N](./img/chat1.png)
-
-## Uso no Chat na WEB
-![Chat na WEB](./img/chat2.png)
 
 ## Referência
 
 Para mais detalhes, consulte: https://docs.n8n.io/
 
+ ## Baixar
+  [Baixar Notebook](face_recognition.ipynb)
 
 ## Licença
 
